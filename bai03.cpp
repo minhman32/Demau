@@ -129,6 +129,6 @@ int main()
 	Xuat(a, n);
 	Tim(a, n, x);
 	Sapxep(a, n);
-	cout << "\nDANH SACH SAU SAP XEP";
+	cout << "\nDANH SACH SAU SAP XEP THEO TRI GIA";
 	Xuat(a, n);
 }
