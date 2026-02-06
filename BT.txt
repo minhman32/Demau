@@ -1,0 +1,28 @@
+1.
+void hoanVi(int *a, int *b) {
+    int temp = *a;   
+    *a = *b;         
+    *b = temp;      
+}
+2.
+void tinhTongHieu(int *p, int *q, int &tong, int &hieu) {
+    tong = *p + *q;   // truy cập giá trị tại địa chỉ p và q
+    hieu = *p - *q;
+}
+
+3.// Hàm nhập mảng dùng con trỏ
+void nhapMang(int *arr, int n) {
+    for (int i = 0; i < n; i++) {
+        cout << "Nhap phan tu thu " << i << ": ";
+        cin >> *(arr + i);   
+    }
+}
+
+// Hàm xuất mảng dùng con trỏ
+void xuatMang(int *arr, int n) {
+    cout << "Cac ptu trong mang: ";
+    for (int i = 0; i < n; i++) {
+        cout << *(arr + i) << " "; 
+    }
+    cout << endl;
+}
